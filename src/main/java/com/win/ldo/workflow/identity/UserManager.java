@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class UserManager extends
-		org.activiti.engine.impl.persistence.entity.UserManager {
+		org.activiti.engine.impl.persistence.entity.UserEntityManager {
 
 	@Override
 	public User createNewUser(String userId) {

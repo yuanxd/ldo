@@ -9,7 +9,7 @@ import org.activiti.engine.identity.GroupQuery;
 import org.activiti.engine.impl.GroupQueryImpl;
 import org.activiti.engine.impl.Page;
 import org.activiti.engine.impl.persistence.entity.GroupEntity;
-import org.activiti.engine.impl.persistence.entity.GroupManager;
+import org.activiti.engine.impl.persistence.entity.GroupEntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,7 +17,7 @@ import com.win.ldo.entity.identity.User;
 import com.win.ldo.service.identity.UserService;
 
 @Component
-public class RoleManager extends GroupManager {
+public class RoleManager extends GroupEntityManager {
 
 	@Autowired
 	private UserService userService;
